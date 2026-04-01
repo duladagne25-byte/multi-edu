@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Yeronis | Premier Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>YERONIS</h1>
+                    <span>Empower Your Future</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#" data-page="home" class="nav-link active">🏠 Home</a></li>
+                    <li><a href="#" data-page="about" class="nav-link">📖 About</a></li>
+                    <li><a href="#" data-page="courses" class="nav-link">📚 Courses</a></li>
+                    <li><a href="#" data-page="contact" class="nav-link">📞 Contact</a></li>
+                    <li><a href="#" data-page="admin" class="nav-link">⚙️ Admin</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- HOME PAGE -->
+            <div id="home-page" class="page active-page">
+                <div class="hero-section">
+                    <div class="hero-content">
+                        <h2>Welcome to <span class="highlight">Yeronis</span></h2>
+                        <p class="hero-subtitle">Discover quality education tailored for ambitious learners across Ethiopia and beyond</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>500+ Students</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-chalkboard-user"></i>
+                                <span>30+ Experts</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-globe-africa"></i>
+                                <span>Global Reach</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-large" id="exploreCoursesBtn">
+                            <i class="fas fa-arrow-right"></i> Explore Courses
+                        </button>
+                    </div>
+                    <div class="hero-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Flexible Learning</h3>
+                        <p>Learn at your own pace with 24/7 access to all course materials</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Verified Certificates</h3>
+                        <p>Earn industry-recognized certificates upon completion</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Community Support</h3>
+                        <p>Join a vibrant community of learners and mentors</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ABOUT PAGE -->
+            <div id="about-page" class="page">
+                <div class="about-header">
+                    <h2>About Yeronis</h2>
+                    <p>Your gateway to world-class education, rooted in Ethiopia</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Our Mission</h3>
+                        <p>To democratize quality education by providing accessible, practical, and career-focused learning experiences for students across Ethiopia, Africa, and the world.</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Our Vision</h3>
+                        <p>To become Africa's leading digital education platform, producing job-ready graduates who drive innovation and economic growth.</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Our Values</h3>
+                        <p>Excellence, Innovation, Inclusivity, and Community. We believe every learner deserves access to premium education.</p>
+                    </div>
+                </div>
+                <div class="location-info">
+                    <h3><i class="fas fa-map-marker-alt"></i> Where We Operate</h3>
+                    <div class="location-grid">
+                        <div class="location-item">
+                            <i class="fas fa-city"></i>
+                            <span>Addis Ababa, Ethiopia</span>
+                        </div>
+                        <div class="location-item">
+                            <i class="fas fa-city"></i>
+                            <span>Dire Dawa, Ethiopia</span>
+                        </div>
+                        <div class="location-item">
+                            <i class="fas fa-city"></i>
+                            <span>Bahir Dar, Ethiopia</span>
+                        </div>
+                        <div class="location-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Global Online Access</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COURSES PAGE -->
+            <div id="courses-page" class="page">
+                <div class="courses-header">
+                    <h2>Our Premium Courses</h2>
+                    <p>Choose from a variety of study levels and specializations</p>
+                </div>
+                <div id="coursesContainer" class="courses-grid"></div>
+            </div>
+
+            <!-- CONTACT PAGE with Country, City, Study Level -->
+            <div id="contact-page" class="page">
+                <div class="contact-header">
+                    <h2>Get In Touch</h2>
+                    <p>We'd love to hear from you — fill the form below and we'll get back to you</p>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <i class="fas fa-map-pin"></i>
+                            <h4>Visit Us</h4>
+                            <p> torayiloch roadmap , Addis Ababa, Ethiopia</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <h4>Call Us</h4>
+                            <p>+251 911 234 567</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email Us</h4>
+                            <p>hello@yeronis.com</p>
+                        </div>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-user"></i> Full Name *</label>
+                                <input type="text" id="contactName" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-envelope"></i> Email Address *</label>
+                                <input type="email" id="contactEmail" placeholder="you@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-globe-africa"></i> Country *</label>
+                                <select id="contactCountry" required>
+                                    <option value="">Select your country</option>
+                                    <option value="Ethiopia">Ethiopia</option>
+                                    <option value="Kenya">Kenya</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-city"></i> City *</label>
+                                <input type="text" id="contactCity" placeholder="Your city" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-graduation-cap"></i> Study Level *</label>
+                            <select id="contactStudyLevel" required>
+                                <option value="">Select your study level</option>
+                                <option value="High School">High School</option>
+                                <option value="Undergraduate">Undergraduate</option>
+                                <option value="Postgraduate">Postgraduate (Master's/PhD)</option>
+                                <option value="Professional Development">Professional Development</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-comment"></i> Message *</label>
+                            <textarea id="contactMsg" rows="4" placeholder="Tell us about your learning goals..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div id="contactFeedback"></div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ADMIN PAGE with Country, City, Study Level Data -->
+            <div id="admin-page" class="page">
+                <div class="admin-header">
+                    <h2><i class="fas fa-user-shield"></i> Admin Dashboard</h2>
+                    <p>Welcome, Administrator — manage courses and review student inquiries</p>
+                </div>
+                
+                <div class="admin-section">
+                    <h3><i class="fas fa-plus-circle"></i> Add New Course</h3>
+                    <form id="addCourseForm" class="add-course-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="courseTitle" placeholder="Course Title (e.g., Full Stack Web Dev)" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="courseInstructor" placeholder="Instructor Name" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="courseStudyLevel">
+                                    <option value="Beginner">Beginner</option>
+                                    <option value="Intermediate">Intermediate</option>
+                                    <option value="Advanced">Advanced</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success">Add Course</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="admin-section">
+                    <h3><i class="fas fa-book"></i> Manage Courses</h3>
+                    <div class="table-responsive">
+                        <table id="adminCoursesTable">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Course Title</th>
+                                    <th>Instructor</th>
+                                    <th>Level</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminCoursesList"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="admin-section">
+                    <h3><i class="fas fa-inbox"></i> Student Inquiries</h3>
+                    <div class="table-responsive">
+                        <table id="messagesTable">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Country</th>
+                                    <th>City</th>
+                                    <th>Study Level</th>
+                                    <th>Message</th>
+                                </tr>
+                            </thead>
+                            <tbody id="messagesList"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>YERONIS</h3>
+                <p>Empowering minds, transforming futures</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" data-page="home">Home</a></li>
+                    <li><a href="#" data-page="courses">Courses</a></li>
+                    <li><a href="#" data-page="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-telegram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Yeronis — Built by Admin | Addis Ababa, Ethiopia</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
